@@ -5,7 +5,7 @@ export const Nav = (arg) => {
         <nav className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
                 <Link to="/" class="flex items-center">
-                    <img src="src\assets\GREY BODY WHITE BORDER.png" className="self-center text-xl font-semibold whitespace-nowrap text-white w-32" alt="Fuelized" />
+                    <img src="src\assets\wit_zwart_randje.png" className="self-center text-xl font-semibold whitespace-nowrap text-white w-32" alt="Fuelized" />
                 </Link>
                 <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none" aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>

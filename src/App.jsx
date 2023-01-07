@@ -5,6 +5,8 @@ import { Gallery } from './pages/Gallery.jsx'
 import { Music } from './pages/Music.jsx'
 import { NotFound } from './pages/NotFound.jsx'
 
+document.title = "Fuelized";
+
 function App() {
   return (
     <Routes>
