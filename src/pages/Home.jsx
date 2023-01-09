@@ -21,14 +21,14 @@ export const Home = () => {
                     <Nav active="home"/>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-4/5'>
                         <div className='grid place-items-center'>
-                            <p className='m-4 font-semibold text-xl'>Luister hieronder text123</p>
+                            <p className='m-4 font-semibold text-xl'>Listen to my music below:</p>
                             <div className='text-center'>
                                 <a href='https://open.spotify.com/artist/2xcgEqf4X5xcerwDFEcefI' target="_blank" className={`${roundedBtn} bg-green-600 hover:bg-green-500`}>SPOTIFY</a>
                                 <a href='https://music.apple.com/us/artist/fuelized/1388443720' target="_blank" className={`${roundedBtn} bg-rose-500 hover:bg-rose-400`}>APPLE MUSIC</a>
                             </div>
                             <a href='https://soundcloud.com/fuelizeddnb' target="_blank" className={`${roundedBtn} bg-orange-600 hover:bg-orange-500`}>SOUNDCLOUD</a>
                         </div>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>photo</div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>image fuelized spinning</div>
                     </div>
                 </div>
 
