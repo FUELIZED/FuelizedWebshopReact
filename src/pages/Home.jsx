@@ -7,7 +7,10 @@ const latestLinks = {
     apple: 'https://music.apple.com/us/album/stay/1623265206?i=1623265212',
     soundcloud: 'https://soundcloud.com/fuelizeddnb/stay'
 }
-const latestInfo = 'Nieuwe music text 123 lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.';
+const latestInfo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl" + 
+        " aliquet nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, eget" +
+        " aliquam nunc nisl eget nisl. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, eget aliquam nunc nisl" +
+        " eget nisl. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, eget aliquam nunc nisl eget nisl.";
 
 export const Home = () => {
 
@@ -17,7 +20,7 @@ export const Home = () => {
         <>
             <div className='overflow-hidden'>
             <div className='h-screen overflow-scroll mandatory-snap-y'>
-                <div className='h-screen bg-zinc-800 snap-start'>
+                <div className='h-screen bg-zinc-800 snap-start grey-bg-image'>
                     <Nav active="home"/>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-4/5'>
                         <div className='grid place-items-center'>
@@ -28,19 +31,19 @@ export const Home = () => {
                             </div>
                             <a href='https://soundcloud.com/fuelizeddnb' target="_blank" className={`${roundedBtn} bg-orange-600 hover:bg-orange-500`}>SOUNDCLOUD</a>
                         </div>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>image fuelized spinning</div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="src/assets/mixing.jpg" alt="image fuelized spinning" className='overflow-hidden rounded-3xl' /></div>
                     </div>
                 </div>
 
 
 
                 <div className='h-screen bg-zinc-900 snap-start'>
-                    <div className='grid place-items-center grid-cols-2 grid-flow-row h-4/5'>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'>artwork release</div>
+                    <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
                         <div className='grid place-items-center'>
                             <p className='m-4 font-semibold text-xl'>Latest release {latestDate}</p>
                             <p>{latest}</p>
-                            <p className='text-center'>{latestInfo}</p>
+                            <p className='text-center w-4/5'>{latestInfo}</p>
                             <div className='text-center'>
                                 <a href='https://open.spotify.com/artist/2xcgEqf4X5xcerwDFEcefI' target="_blank" className={`${roundedBtn} bg-green-600 hover:bg-green-500`}>LISTEN ON SPOTIFY</a>
                                 <a href='https://music.apple.com/us/artist/fuelized/1388443720' target="_blank" className={`${roundedBtn} bg-rose-500 hover:bg-rose-400`}>LISTEN ON APPLE MUSIC</a>
@@ -53,7 +56,13 @@ export const Home = () => {
 
 
                 <div className='h-screen bg-zinc-800 snap-start'>
-
+                    <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
+                        <div className='grid place-items-center'>
+                            <h1 className='m-4 font-semibold text-xl'>Bookings</h1>
+                            <a href='#' target="_blank" className={`${roundedBtn} bg-blue-600 hover:bg-blue-500`}>Bookings text</a>
+                        </div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="" alt="image" className='overflow-hidden rounded-3xl' /></div>
+                    </div>
                 </div>
             </div>
             </div>

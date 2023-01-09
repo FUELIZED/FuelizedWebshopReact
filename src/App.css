@@ -14,6 +14,15 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+.grey-bg-image {
+  background-image: url('./assets/fuelized_crowd_blackwhite.png');
+  background-size: cover;
+}
+
+.grey-bg-image > * {
+  filter: none;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
