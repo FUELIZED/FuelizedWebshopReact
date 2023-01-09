@@ -1,5 +1,3 @@
-import { Shop } from './pages/Shop.jsx'
-
 import { Nav } from './components/Nav.jsx';
 
 export const Shop = () => {
