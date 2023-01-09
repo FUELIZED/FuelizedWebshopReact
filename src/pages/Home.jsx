@@ -36,7 +36,7 @@ export const Home = () => {
 
                 <div className='h-screen bg-zinc-900 snap-start'>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-4/5'>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'>photo</div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'>artwork release</div>
                         <div className='grid place-items-center'>
                             <p className='m-4 font-semibold text-xl'>Latest release {latestDate}</p>
                             <p>{latest}</p>
