@@ -57,7 +57,7 @@ export const Home = () => {
                             <h1 className='m-4 font-semibold text-xl'>Bookings</h1>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLSeRwXcI6kC9edDFMYPxkGXb4Kg6xturkMV6ui-RrBl0M12Pmw/viewform' target="_blank" className={`${roundedBtn} bg-blue-600 hover:bg-blue-500`}>Book me for your next event</a>
                         </div>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="" alt="image" className='overflow-hidden rounded-3xl' /></div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="src/assets/IMG_1618.jpg" alt="image" className='overflow-hidden rounded-3xl' /></div>
                     </div>
                 </div>
             </div>
