@@ -35,8 +35,6 @@ export const Home = () => {
                     </div>
                 </div>
 
-
-
                 <div className='h-screen bg-zinc-900 snap-start'>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
                         <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
@@ -53,13 +51,11 @@ export const Home = () => {
                     </div>
                 </div>
 
-
-
                 <div className='h-screen bg-zinc-800 snap-start'>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
                         <div className='grid place-items-center'>
                             <h1 className='m-4 font-semibold text-xl'>Bookings</h1>
-                            <a href='#' target="_blank" className={`${roundedBtn} bg-blue-600 hover:bg-blue-500`}>Bookings text</a>
+                            <a href='https://docs.google.com/forms/d/e/1FAIpQLSeRwXcI6kC9edDFMYPxkGXb4Kg6xturkMV6ui-RrBl0M12Pmw/viewform' target="_blank" className={`${roundedBtn} bg-blue-600 hover:bg-blue-500`}>Book me for your next event</a>
                         </div>
                         <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="" alt="image" className='overflow-hidden rounded-3xl' /></div>
                     </div>
