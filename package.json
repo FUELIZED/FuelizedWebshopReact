@@ -1,7 +1,7 @@
 {
   "name": "fuelized-webshop",
   "private": true,
-  "version": "0.0.0",
+  "version": "v1.22.20",
   "type": "module",
   "scripts": {
     "dev": "vite",
