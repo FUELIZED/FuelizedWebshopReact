@@ -31,7 +31,13 @@ export const Home = () => {
                             </div>
                             <a href='https://soundcloud.com/fuelizeddnb' target="_blank" className={`${roundedBtn} bg-orange-600 hover:bg-orange-500`}>SOUNDCLOUD</a>
                         </div>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="src/assets/mixing.jpg" alt="image fuelized spinning" className='overflow-hidden rounded-3xl' /></div>
+                        {/* <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="src/assets/mixing.jpg" alt="image fuelized spinning" className='overflow-hidden rounded-3xl' /></div> */}
+                        <div className='bg-zinc-500 w-3/4 max-w-xl aspect-video rounded-3xl'>
+                            <video autoPlay loop muted className='overflow-hidden rounded-3xl'>
+                                <source src="src/assets/FUELIZED_SOLAR (1).mp4" type="video/mp4"/>
+                                no video support in this browser
+                            </video>
+                        </div>
                     </div>
                 </div>
 
