@@ -28,8 +28,6 @@ export const Nav = (arg) => {
                         <Link to="/shop" className={`block py-2 pl-3 pr-4 ${arg.active === "shop" ? "text-blue-400": "text-gray-400"} bg-blue-700 rounded md:bg-transparent md:p-0`}>
                             Shop
                         </Link>
-                        
-                        
                     </li>
                     <li>
                         <Link to="/labels" className={`block py-2 pl-3 pr-4 ${arg.active === "labels" ? "text-blue-400": "text-gray-400"} bg-blue-700 rounded md:bg-transparent md:p-0`}>

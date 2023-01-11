@@ -17,8 +17,8 @@ function App() {
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/music" element={<Music />} />
       <Route path="/shop" element={<Shop />} />
-      <Route path="/labels" element={<Labels/>} />
-      <Route path="/freedownloads" element={<Freedownloads/>} />
+      <Route path="/music/labels" element={<Labels/>} />
+<Route path="/music/freedownloads" element={<Freedownloads/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
