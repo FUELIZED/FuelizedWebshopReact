@@ -1,7 +1,7 @@
 import { Nav } from './components/Nav.jsx';
 
 const latestDate = '08-01-2023';
-const latest = "Fuelized - ID";
+const latest = "Fuelized & A to C - Stay";
 const latestLinks = {
     spotify: 'https://open.spotify.com/track/3GmqBJnp5Pj7QGX6ZKlQTJ?si=9114459cf7cd4e71',
     apple: 'https://music.apple.com/us/album/stay/1623265206?i=1623265212',
@@ -43,9 +43,9 @@ export const Home = () => {
 
                 <div className='h-screen bg-zinc-900 snap-start'>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="\src\assets\Artwork cover homepage.png" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
                         <div className='grid place-items-center'>
-                            <p className='m-4 font-semibold text-xl'>Latest release {latestDate}</p>
+                            <p className='m-4 font-semibold text-xl'>LATEST RELEASE 30.05.2022</p>
                             <p>{latest}</p>
                             <p className='text-center w-4/5'>{latestInfo}</p>
                             <div className='text-center'>
