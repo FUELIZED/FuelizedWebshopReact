@@ -2,7 +2,6 @@ import { Nav } from './components/Nav.jsx';
 
 const images = [
     "src/assets/gallery/g1.jpeg",
-    "src/assets/gallery/g2.jpeg",
     "src/assets/gallery/g3.png",
     "src/assets/gallery/g4.jpg",
     "src/assets/gallery/g5.JPG",
