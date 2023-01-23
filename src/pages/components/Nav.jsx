@@ -1,6 +1,16 @@
 import { Link } from "react-router-dom"
+import {IoMdPhotos, IoIosMusicalNotes, IoMdBasket, IoMdDownload} from "react-icons/io"
+import {FaRecordVinyl} from "react-icons/fa"
+
 
 export const Nav = (arg) => {
+    const navStyle = `block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 flex gap-2 place-items-center`
+    const galleryIcon = <IoMdPhotos className={`${arg.active === "gallery" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const musicIcon = <IoIosMusicalNotes className={`${arg.active === "music" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const shopIcon = <IoMdBasket className={`${arg.active === "shop" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const labelsIcon = <FaRecordVinyl className={`${arg.active === "labels" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const freedownloadsIcon = <IoMdDownload className={`${arg.active === "freedownloads" ? "fill-blue-400": "fill-gray-400"}`}/>
+
     return (
         <nav className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -15,28 +25,28 @@ export const Nav = (arg) => {
                 <ul class="flex flex-col p-4 mt-4 border border-zinc-700 rounded-lg bg-zinc-800 md:flex-row md:space-x-8 md:mt-0 
                     md:text-sm md:font-medium md:border-0 md:bg-zinc-900 dark:border-zinc-700">
                     <li>
-                        <Link to="/gallery" className={`block py-2 pl-3 pr-4 ${arg.active === "gallery" ? "text-blue-400": "text-gray-400"} bg-blue-700 rounded md:bg-transparent md:p-0`}>
-                            Gallery
+                        <Link to="/gallery" className={`${navStyle} ${arg.active === "gallery" ? "text-blue-400": "text-gray-400"}`}>
+                            {galleryIcon}Gallery
                         </Link>
                     </li>
                     <li>
-                        <Link to="/music" className={`block py-2 pl-3 pr-4 ${arg.active === "music" ? "text-blue-400": "text-gray-400"} bg-blue-700 rounded md:bg-transparent md:p-0`}>
-                            Music
+                        <Link to="/music" className={`${navStyle} ${arg.active === "music" ? "text-blue-400": "text-gray-400"}`}>
+                            {musicIcon}Music
                         </Link>
                     </li>
                     <li>
-                        <Link to="/shop" className={`block py-2 pl-3 pr-4 ${arg.active === "shop" ? "text-blue-400": "text-gray-400"} bg-blue-700 rounded md:bg-transparent md:p-0`}>
-                            Shop
+                        <Link to="/shop" className={`${navStyle} ${arg.active === "shop" ? "text-blue-400": "text-gray-400"}`}>
+                            {shopIcon}Shop
                         </Link>
                     </li>
                     <li>
-                        <Link to="/labels" className={`block py-2 pl-3 pr-4 ${arg.active === "labels" ? "text-blue-400": "text-gray-400"} bg-blue-700 rounded md:bg-transparent md:p-0`}>
-                        Labels
+                        <Link to="/labels" className={`${navStyle} ${arg.active === "labels" ? "text-blue-400": "text-gray-400"}`}>
+                        {labelsIcon}Labels
                         </Link>
                     </li>
                     <li>
-                        <Link to="/freedownloads" className={`block py-2 pl-3 pr-4 ${arg.active === "freedownloads" ? "text-blue-400": "text-gray-400"} bg-blue-700 rounded md:bg-transparent md:p-0`}>
-                        Free Downloads
+                        <Link to="/freedownloads" className={`${navStyle} ${arg.active === "freedownloads" ? "text-blue-400": "text-gray-400"}`}>
+                        {freedownloadsIcon}Free Downloads
                         </Link>
                     </li>
                 </ul>
