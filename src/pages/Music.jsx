@@ -5,19 +5,7 @@ export const Music = () => {
         <>
             <Nav active="music"/>
             <h1>Music</h1>
-            <hr></hr>
-            <h2>UPCOMING RELEASES</h2>
-            
-            <h4>
-MORE INFO 
-TO BE ANNOUNCED 
-SOON!
-</h4>
-<hr></hr>
-<h5>
-My spotify stream
-</h5>
-<hr></hr>
+
         </>
     )
 };
