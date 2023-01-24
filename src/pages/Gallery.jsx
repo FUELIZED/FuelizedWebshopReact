@@ -22,7 +22,8 @@ export const Gallery = () => {
     return (
         <>
         <Nav active="gallery"/>
-        <div className='grid place-items-center py-24'>
+        <div className='grid place-items-center py-14'>
+        <h1 className='pb-12 font-semibold italic text-6xl'>Gallery</h1>
         <Grid imgs={images.slice(0,6)}/>
         <Grid imgs={images.slice(6,12)}/>
         <Grid imgs={images.slice(12,18)}/>
@@ -39,29 +40,29 @@ const Grid = (args) => {
     <div class="flex flex-wrap -m-1 md:-m-2">
       <div class="flex flex-wrap w-1/2">
         <div class="w-1/2 p-1 md:p-2">
-          <img alt="" class={args.imgs[0] ? imgStyle : ""}
+          <img alt="" loading='lazy' class={args.imgs[0] ? imgStyle : ""}
             src={args.imgs[0]}/>
         </div>
         <div class="w-1/2 p-1 md:p-2">
-          <img alt="" class={args.imgs[1] ? imgStyle : ""}
+          <img alt="" loading='lazy' class={args.imgs[1] ? imgStyle : ""}
             src={args.imgs[1]}/>
         </div>
         <div class="w-full p-1 md:p-2">
-          <img alt="" class={args.imgs[3] ? imgStyle : ""}
+          <img alt="" loading='lazy' class={args.imgs[3] ? imgStyle : ""}
             src={args.imgs[3]}/>
         </div>
       </div>
       <div class="flex flex-wrap w-1/2">
         <div class="w-full p-1 md:p-2">
-          <img alt="" class={args.imgs[2] ? imgStyle : ""}
+          <img alt="" loading='lazy' class={args.imgs[2] ? imgStyle : ""}
             src={args.imgs[2]}/>
         </div>
         <div class="w-1/2 p-1 md:p-2">
-          <img alt="" class={args.imgs[4] ? imgStyle : ""}
+          <img alt="" loading='lazy' class={args.imgs[4] ? imgStyle : ""}
             src={args.imgs[4]}/>
         </div>
         <div class="w-1/2 p-1 md:p-2">
-          <img alt="" class={args.imgs[5] ? imgStyle : ""}
+          <img alt="" loading='lazy' class={args.imgs[5] ? imgStyle : ""}
             src={args.imgs[5]}/>
         </div>
       </div>
