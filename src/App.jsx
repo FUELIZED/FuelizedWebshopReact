@@ -14,6 +14,8 @@ import { Myaccount } from './pages/Myaccount.jsx'
 import { Accountdetails } from './pages/Accountdetails.jsx'
 import { Downloads } from './pages/Downloads.jsx'
 import { Myorders } from './pages/Myorders.jsx'
+import { Termsandconditions } from './pages/Termsandconditions.jsx'
+import { Privacypolicy } from './pages/Privacypolicy.jsx'
 import { NotFound } from './pages/NotFound.jsx'
 
 document.title = "Fuelized";
@@ -35,6 +37,8 @@ function App() {
       <Route path="/accountdetails" element={<Accountdetails/>} />
       <Route path="/downloads" element={<Downloads/>} />
       <Route path="/myorders" element={<Myorders/>} />
+      <Route path="/termsandconditions" element={<Termsandconditions/>} />
+      <Route path="/privacypolicy" element={<Privacypolicy/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

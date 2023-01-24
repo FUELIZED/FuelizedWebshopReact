@@ -89,6 +89,16 @@ export const Nav = (arg) => {
                             {shopIcon}My orders
                         </Link>
                     </li>
+                    <li>
+                        <Link to="/termsandconditions" className={`${navStyle} ${arg.active === "termsandconditions" ? "text-blue-400": "text-gray-400"}`}>
+                            {shopIcon}Terms & Conditions
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/privacypolicy" className={`${navStyle} ${arg.active === "privacypolicy" ? "text-blue-400": "text-gray-400"}`}>
+                            {shopIcon}Privacy Policy
+                        </Link>
+                    </li>
                 </ul>
                 </div>
             </div>
