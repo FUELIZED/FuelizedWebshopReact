@@ -9,6 +9,7 @@ import { Freedownloads } from './pages/Freedownloads.jsx'
 import { Hoodies } from './pages/Hoodies.jsx'
 import { Tshirts } from './pages/Tshirts.jsx'
 import { Musicreleases } from './pages/Musicreleases.jsx'
+import { Goodiebags } from './pages/Goodiebags.jsx'
 import { NotFound } from './pages/NotFound.jsx'
 
 document.title = "Fuelized";
@@ -25,6 +26,7 @@ function App() {
       <Route path="/hoodies" element={<Hoodies/>} />
       <Route path="/tshirts" element={<Tshirts/>} />
       <Route path="/musicreleases" element={<Musicreleases/>} />
+      <Route path="/goodiebags" element={<Goodiebags/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )

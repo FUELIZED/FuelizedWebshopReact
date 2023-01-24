@@ -50,6 +50,11 @@ export const Nav = (arg) => {
                         </Link>
                     </li>
                     <li>
+                        <Link to="/musicreleases" className={`${navStyle} ${arg.active === "musicreleases" ? "text-blue-400": "text-gray-400"}`}>
+                            {shopIcon}Music Releases
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/hoodies" className={`${navStyle} ${arg.active === "hoodies" ? "text-blue-400": "text-gray-400"}`}>
                             {shopIcon}Hoodies
                         </Link>
@@ -60,8 +65,8 @@ export const Nav = (arg) => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/musicreleases" className={`${navStyle} ${arg.active === "musicreleases" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}Music Releases
+                        <Link to="/goodiebags" className={`${navStyle} ${arg.active === "goodiebags" ? "text-blue-400": "text-gray-400"}`}>
+                            {shopIcon}Goodiebags
                         </Link>
                     </li>
                 </ul>
