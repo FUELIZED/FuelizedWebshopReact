@@ -12,6 +12,7 @@ Use ```yarn dev --host``` to expose the server to the local network.
 
 
 Things to do: 
+- Link a back-end utility with a login for administrator users, preferabbely with 2FA options due to security reasons
 - Finishing dropdowns in the menu.
 - Mobile responsivity
 - Content copy from fuelized.com (Texts, images, styling & fonts.)
