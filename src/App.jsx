@@ -10,6 +10,8 @@ import { Hoodies } from './pages/Hoodies.jsx'
 import { Tshirts } from './pages/Tshirts.jsx'
 import { Musicreleases } from './pages/Musicreleases.jsx'
 import { Goodiebags } from './pages/Goodiebags.jsx'
+import { Myaccount } from './pages/Myaccount.jsx'
+import { Accountdetails } from './pages/Accountdetails.jsx'
 import { NotFound } from './pages/NotFound.jsx'
 
 document.title = "Fuelized";
@@ -27,6 +29,8 @@ function App() {
       <Route path="/tshirts" element={<Tshirts/>} />
       <Route path="/musicreleases" element={<Musicreleases/>} />
       <Route path="/goodiebags" element={<Goodiebags/>} />
+      <Route path="/myaccount" element={<Myaccount/>} />
+      <Route path="/accountdetails" element={<Accountdetails/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
