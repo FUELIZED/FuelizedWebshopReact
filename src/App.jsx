@@ -7,6 +7,7 @@ import { Shop } from './pages/Shop.jsx'
 import { Labels } from './pages/Labels.jsx'
 import { Freedownloads } from './pages/Freedownloads.jsx'
 import { Hoodies } from './pages/Hoodies.jsx'
+import { Tshirts } from './pages/Tshirts.jsx'
 import { NotFound } from './pages/NotFound.jsx'
 
 document.title = "Fuelized";
@@ -21,6 +22,7 @@ function App() {
       <Route path="/labels" element={<Labels/>} />
       <Route path="/freedownloads" element={<Freedownloads/>} />
       <Route path="/hoodies" element={<Hoodies/>} />
+      <Route path="/tshirts" element={<Tshirts/>} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
