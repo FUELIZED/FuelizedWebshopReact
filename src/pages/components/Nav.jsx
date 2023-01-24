@@ -25,6 +25,11 @@ export const Nav = (arg) => {
                 <ul className="flex flex-col p-4 mt-4 border border-zinc-700 rounded-lg bg-zinc-800 md:flex-row md:space-x-8 md:mt-0 
                     md:text-sm md:font-medium md:border-0 md:bg-zinc-900 dark:border-zinc-700">
                     <li>
+                        <Link to="/contact" className={`${navStyle} ${arg.active === "contact" ? "text-blue-400": "text-gray-400"}`}>
+                            {shopIcon}Contact
+                        </Link>
+                    </li>
+                    <li>
                         <Link to="/freedownloads" className={`${navStyle} ${arg.active === "freedownloads" ? "text-blue-400": "text-gray-400"}`}>
                         {freedownloadsIcon}Free Downloads
                         </Link>
