@@ -17,5 +17,6 @@ Things to do:
 - Mobile responsivity
 - Content copy from fuelized.com (Texts, images, styling & fonts.)
 - As secure as possible (Hackingproof on upload)
-- 0auth (Google & Facebook login possibility)
 - User login possibility (Via 0auth would be the best) Google & facebook are enough.
+- For payments: Mollie or Adyen? Probably via API's
+- Changing the icons from the navbar items
