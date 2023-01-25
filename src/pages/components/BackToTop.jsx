@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { AiOutlineArrowUp } from 'react-icons/ai'
 
 const back = () => {
     const e = document.getElementById("navbartop")
@@ -10,6 +10,6 @@ const back = () => {
 
 export const BackToTop = () => {
     return (
-        <button className={`h-16 bg-zinc-700 aspect-square absolute bottom-8 right-8 rounded-2xl`} onClick={back}>Back</button>
+        <button className={`p-2 bg-zinc-700 aspect-square absolute bottom-8 right-8 rounded-2xl`} onClick={back}><AiOutlineArrowUp size={30}/></button>
     )
 }
