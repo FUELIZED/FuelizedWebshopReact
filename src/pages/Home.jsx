@@ -1,4 +1,6 @@
 import { Nav } from './components/Nav.jsx';
+import { Footer } from './components/Footer.jsx';
+import { BackToTop } from './components/BackToTop.jsx';
 
 const latestDate = '08-01-2023';
 const latest = "Fuelized & A to C - Stay";
@@ -19,8 +21,8 @@ export const Home = () => {
     return (
         <>
             <div className='overflow-hidden'>
-            <div className='h-screen overflow-scroll mandatory-snap-y'>
-                <div className='h-screen bg-zinc-800 snap-start grey-bg-image'>
+            <div id='overflow' className='h-screen overflow-scroll mandatory-snap-y'>
+                <div className='h-screen bg-zinc-800 snap-start grey-bg-image relative z-50'>
                     <Nav active="home"/>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-4/5'>
                         <div className='grid place-items-center'>
@@ -66,30 +68,35 @@ export const Home = () => {
                         <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="src/assets/IMG_1618.jpg" alt="image" className='overflow-hidden rounded-3xl' /></div>
                     </div>
                 </div>
-                <div className='h-screen bg-zinc-900 snap-start'>
-                <div className='grid h-full'>
-                    <div className='grid place-items-end relative mx-auto'>
-                        <h1 className='m-4 font-semibold text-xl'>Past events</h1>
-                    </div>
-                    <div className=''>
-                        <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
-                        <div className='flex w-full justify-center relative top-4 mx-auto gap-8'>
-                            <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl '>
-                                <img src="" alt="image" className='overflow-hidden rounded-3xl' />
-                            </div>
-                            <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                <img src="" alt="image" className='overflow-hidden rounded-3xl' />
-                            </div>
-                            <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                <img src="" alt="image" className='overflow-hidden rounded-3xl' />
+                <div className='h-screen bg-zinc-900 snap-start lastElement'>
+                <div className='h-full flex flex-col'>
+                    <div className='flex-grow grid'>
+                        <div className='grid place-items-end relative mx-auto'>
+                            <h1 className='m-4 font-semibold text-xl'>Past events</h1>
+                        </div>
+                        <div className='h-max'>
+                            <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
+                            <div className='flex w-full justify-center relative top-4 mx-auto gap-8'>
+                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl '>
+                                    <img src="" alt="image" className='overflow-hidden rounded-3xl' />
+                                </div>
+                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
+                                    <img src="" alt="image" className='overflow-hidden rounded-3xl' />
+                                </div>
+                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
+                                    <img src="" alt="image" className='overflow-hidden rounded-3xl' />
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div className='relative bottom-0'>
+                        <Footer />
+                    </div>
                 </div>
                 </div>
+                <BackToTop />  
             </div>
             </div>
-            
         </>
     )
 };

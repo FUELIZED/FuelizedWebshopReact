@@ -12,7 +12,7 @@ export const Nav = (arg) => {
     const freedownloadsIcon = <IoMdDownload className={`${arg.active === "freedownloads" ? "fill-blue-400": "fill-gray-400"}`}/>
 
     return (
-        <nav className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
+        <nav id="navbartop" className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
                 <Link to="/" className="flex items-center">
                     <img src="src\assets\wit_zwart_randje.png" className="self-center text-xl font-semibold whitespace-nowrap text-white w-32" alt="Fuelized" />
