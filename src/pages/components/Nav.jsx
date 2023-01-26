@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
-import {IoMdPhotos, IoIosMusicalNotes, IoMdBasket, IoMdDownload} from "react-icons/io"
+import {IoMdPhotos, IoIosMusicalNotes, IoMdBasket, IoMdDownload, IoMdContact, IoMdMusicalNote, IoMdShirt} from "react-icons/io"
 import {FaRecordVinyl} from "react-icons/fa"
+import {GiHoodie, GiShoppingBag} from "react-icons/gi"
 
 
 export const Nav = (arg) => {
@@ -10,6 +11,11 @@ export const Nav = (arg) => {
     const shopIcon = <IoMdBasket className={`${arg.active === "shop" ? "fill-blue-400": "fill-gray-400"}`}/>
     const labelsIcon = <FaRecordVinyl className={`${arg.active === "labels" ? "fill-blue-400": "fill-gray-400"}`}/>
     const freedownloadsIcon = <IoMdDownload className={`${arg.active === "freedownloads" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const contactIcon = <IoMdContact className={`${arg.active === "contact" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const musicreleasesIcon = <IoMdMusicalNote className={`${arg.active === "musicreleases" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const hoodiesIcon = <GiHoodie className={`${arg.active === "hoodies" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const tshirtsIcon = <IoMdShirt className={`${arg.active === "tshirts" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const goodiebagsIcon = <GiShoppingBag className={`${arg.active === "goodiebags" ? "fill-blue-400": "fill-gray-400"}`}/>
 
     return (
         <nav id="navbartop" className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
@@ -26,7 +32,7 @@ export const Nav = (arg) => {
                     md:text-sm md:font-medium md:border-0 md:bg-zinc-900 dark:border-zinc-700">
                     <li>
                         <Link to="/contact" className={`${navStyle} ${arg.active === "contact" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}Contact
+                            {contactIcon}Contact
                         </Link>
                     </li>
                     <li>
@@ -56,22 +62,22 @@ export const Nav = (arg) => {
                     </li>
                     <li>
                         <Link to="/musicreleases" className={`${navStyle} ${arg.active === "musicreleases" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}Music Releases
+                            {musicreleasesIcon}Music Releases
                         </Link>
                     </li>
                     <li>
                         <Link to="/hoodies" className={`${navStyle} ${arg.active === "hoodies" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}Hoodies
+                            {hoodiesIcon}Hoodies
                         </Link>
                     </li>
                     <li>
                         <Link to="/tshirts" className={`${navStyle} ${arg.active === "tshirts" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}T-Shirts
+                            {tshirtsIcon}T-Shirts
                         </Link>
                     </li>
                     <li>
                         <Link to="/goodiebags" className={`${navStyle} ${arg.active === "goodiebags" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}Goodiebags
+                            {goodiebagsIcon}Goodiebags
                         </Link>
                     </li>
                     <li>
