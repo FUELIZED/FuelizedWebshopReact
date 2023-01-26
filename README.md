@@ -19,4 +19,4 @@ Things to do:
 - As secure as possible (Hackingproof on upload)
 - User login possibility (Via 0auth would be the best) Google & facebook are enough.
 - For payments: Mollie or Adyen? Probably via API's
-- Changing the icons from the navbar items
+
