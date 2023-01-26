@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import {IoMdPhotos, IoIosMusicalNotes, IoMdBasket, IoMdDownload, IoMdContact, IoMdMusicalNote, IoMdShirt, IoMdInformationCircleOutline, IoMdInformation, IoMdCloudDownload, IoMdBriefcase} from "react-icons/io"
 import {FaRecordVinyl} from "react-icons/fa"
-import {GiHoodie, GiShoppingBag} from "react-icons/gi"
+import {GiHoodie, GiShoppingBag, GiCalendar} from "react-icons/gi"
 
 export const Nav = (arg) => {
     const navStyle = `block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 flex gap-2 place-items-center`
@@ -19,6 +19,8 @@ export const Nav = (arg) => {
     const accountdetailsIcon = <IoMdInformation className={`${arg.active === "accountdetails" ? "fill-blue-400": "fill-gray-400"}`}/>
     const downloadsIcon = <IoMdCloudDownload className={`${arg.active === "downloads" ? "fill-blue-400": "fill-gray-400"}`}/>
     const myordersIcon = <IoMdBriefcase className={`${arg.active === "myorders" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const eventsIcon = <GiCalendar className={`${arg.active === "events" ? "fill-blue-400": "fill-gray-400"}`}/>
+
 
     return (
         <nav id="navbartop" className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
@@ -36,6 +38,11 @@ export const Nav = (arg) => {
                     <li>
                         <Link to="/contact" className={`${navStyle} ${arg.active === "contact" ? "text-blue-400": "text-gray-400"}`}>
                             {contactIcon}Contact
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/events" className={`${navStyle} ${arg.active === "events" ? "text-blue-400": "text-gray-400"}`}>
+                            {eventsIcon}Events
                         </Link>
                     </li>
                     <li>
