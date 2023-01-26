@@ -5,7 +5,7 @@ export const Music = () => {
     return (
         <>
             <Nav active="music"/>
-            <h1>Music</h1>
+            <h1 className='pb-12 font-semibold text-6xl'>Music</h1>
             <div className='relative bottom-0'>
             <Footer />
             </div>

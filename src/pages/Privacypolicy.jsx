@@ -4,7 +4,7 @@ export const Privacypolicy = () => {
     return (
         <>
             <Nav active="Privacypolicy"/>
-            <h1>Privacypolicy</h1>
+            <h1 className='pb-12 font-semibold text-6xl'>Privacy Policy</h1>
         </>
     )
 };

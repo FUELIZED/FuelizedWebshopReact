@@ -23,7 +23,7 @@ export const Gallery = () => {
         <>
         <Nav active="gallery"/>
         <div className='grid place-items-center py-14'>
-        <h1 className='pb-12 font-semibold italic text-6xl'>Gallery</h1>
+        <h1 className='pb-12 font-semibold text-6xl'>Gallery</h1>
         <Grid imgs={images.slice(0,6)}/>
         <Grid imgs={images.slice(6,12)}/>
         <Grid imgs={images.slice(12,18)}/>

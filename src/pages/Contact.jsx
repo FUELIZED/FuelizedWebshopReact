@@ -5,7 +5,7 @@ export const Contact = () => {
     return (
         <>
             <Nav active="Contact"/>
-            <h1>Contact</h1>
+            <h1 className='pb-12 font-semibold text-6xl'>Contact</h1>
             <div className='relative bottom-0'>
                         <Footer />
             </div>

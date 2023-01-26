@@ -5,7 +5,7 @@ export const Myaccount = () => {
     return (
         <>
             <Nav active="Myaccount"/>
-            <h1>My account</h1>
+            <h1 className='pb-12 font-semibold text-6xl'>My account</h1>
             <div className='relative bottom-0'>
             <Footer />
             </div>

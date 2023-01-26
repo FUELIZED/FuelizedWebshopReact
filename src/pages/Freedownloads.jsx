@@ -6,7 +6,7 @@ export const Freedownloads = () => {
     return (
         <>
             <Nav active="Free downloads"/>
-            <h1>Free downloads</h1>
+            <h1 className='pb-12 font-semibold text-6xl'>Free downloads</h1>
             <FreeTrack trackname="Test" link="https://soundcloud.com/fuelizeddnb"/>
             <div className='relative bottom-0'>
                         <Footer />

@@ -5,7 +5,7 @@ export const Shop = () => {
     return (
         <>
             <Nav active="shop"/>
-            <h1>Shop</h1>
+            <h1 className='pb-12 font-semibold text-6xl'>Shop</h1>
             <div className='relative bottom-0'>
             <Footer />
             </div>

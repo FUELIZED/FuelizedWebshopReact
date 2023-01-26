@@ -5,7 +5,7 @@ export const Labels = () => {
     return (
         <>
             <Nav active="labels"/>
-            <h1>Labels</h1>
+            <h1 className='pb-12 font-semibold text-6xl'>Labels</h1>
             <div className='relative bottom-0'>
             <Footer />
             </div>

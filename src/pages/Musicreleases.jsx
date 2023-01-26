@@ -4,8 +4,8 @@ import { Footer } from './components/Footer.jsx';
 export const Musicreleases = () => {
     return (
         <>
-            <Nav active="Musicreleases"/>
-            <h1>Music Releases</h1>
+            <Nav active="Music Releases"/>
+            <h1 className='pb-12 font-semibold text-6xl'>Music Releases</h1>
             <div className='relative bottom-0'>
             <Footer />
             </div>
