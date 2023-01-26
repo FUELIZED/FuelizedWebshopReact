@@ -69,9 +69,6 @@ const Grid = (args) => {
       </div>
     </div>
   </div>
-      <div className='relative bottom-0'>
-                        <Footer />
-      </div>
 </section>
     )   
 }

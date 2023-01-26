@@ -3,7 +3,6 @@ import {IoMdPhotos, IoIosMusicalNotes, IoMdBasket, IoMdDownload, IoMdContact, Io
 import {FaRecordVinyl} from "react-icons/fa"
 import {GiHoodie, GiShoppingBag} from "react-icons/gi"
 
-
 export const Nav = (arg) => {
     const navStyle = `block py-2 pl-3 pr-4 bg-blue-700 rounded md:bg-transparent md:p-0 flex gap-2 place-items-center`
     const galleryIcon = <IoMdPhotos className={`${arg.active === "gallery" ? "fill-blue-400": "fill-gray-400"}`}/>

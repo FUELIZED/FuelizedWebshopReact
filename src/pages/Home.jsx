@@ -72,19 +72,38 @@ export const Home = () => {
                 <div className='h-full flex flex-col'>
                     <div className='flex-grow grid'>
                         <div className='grid place-items-end relative mx-auto'>
+                            <h1 className='m-4 font-semibold text-xl'>Logo's</h1>
+                        </div>
+                        <div className='h-max'>
+                            <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
+                            <div className='flex w-full justify-center relative top-4 mx-auto gap-8'>
+                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl '>
+                                    <img src="src\assets\imgs_vids\BLACK ORANGE BORDER.png" alt="src\assets\imgs_vids\2021-07-05 13.12.36.png" className='overflow-hidden rounded-3xl' />
+                                </div>
+                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
+                                    <img src="src\assets\imgs_vids\BLACK PURPLE.png" alt="src/assets/FUELIZED_SOLAR (1).mp4" className='overflow-hidden rounded-3xl' />
+                                </div>
+                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
+                                    <img src="src\assets\imgs_vids\BLACK GREEN BRDR.png" alt="src/assets/" className='overflow-hidden rounded-3xl' />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='flex-grow grid'>
+                        <div className='grid place-items-end relative mx-auto'>
                             <h1 className='m-4 font-semibold text-xl'>Past events</h1>
                         </div>
                         <div className='h-max'>
                             <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
                             <div className='flex w-full justify-center relative top-4 mx-auto gap-8'>
                                 <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl '>
-                                    <img src="" alt="image" className='overflow-hidden rounded-3xl' />
+                                    <img src="src\assets\imgs_vids\20210218_071438_img_0609.JPG" alt="src\assets\imgs_vids\2021-07-05 13.12.36.png" className='overflow-hidden rounded-3xl' />
                                 </div>
                                 <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                    <img src="" alt="image" className='overflow-hidden rounded-3xl' />
+                                    <img src="src\assets\imgs_vids\IMG_8167.jpg" alt="src/assets/FUELIZED_SOLAR (1).mp4" className='overflow-hidden rounded-3xl' />
                                 </div>
                                 <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                    <img src="" alt="image" className='overflow-hidden rounded-3xl' />
+                                    <img src="src\assets\imgs_vids\mixing.jpg" alt="src/assets/" className='overflow-hidden rounded-3xl' />
                                 </div>
                             </div>
                         </div>
