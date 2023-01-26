@@ -7,7 +7,7 @@ export const Tshirts = () => {
         <>
             <Nav active="tshirts"/>
             <h1 className='pb-12 font-semibold text-6xl'>T-Shirts</h1>
-            <H2>This page should show all the shirts products addable to the cart.</H2>
+            <h2>This page should show all the shirts products addable to the cart.</h2>
             <div className='relative bottom-0'>
             <Footer />
             </div>

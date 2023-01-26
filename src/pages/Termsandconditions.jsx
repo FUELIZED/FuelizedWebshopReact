@@ -7,7 +7,7 @@ export const Termsandconditions = () => {
         <>
             <Nav active="termsandconditions"/>
             <h1 className='pb-12 font-semibold text-6xl'>Terms & Conditions</h1>
-            <H2>Can be copied from fuelized.com</H2>
+            <h2>Can be copied from fuelized.com</h2>
             <div className='relative bottom-0'>
             <Footer />
             </div>

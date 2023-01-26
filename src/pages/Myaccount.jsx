@@ -7,7 +7,7 @@ export const Myaccount = () => {
         <>
             <Nav active="myaccount"/>
             <h1 className='pb-12 font-semibold text-6xl'>My account</h1>
-            <H2>This page should show an overview of all tabs within my account.</H2>
+            <h2>This page should show an overview of all tabs within my account.</h2>
             <div className='relative bottom-0'>
             <Footer />
             </div>

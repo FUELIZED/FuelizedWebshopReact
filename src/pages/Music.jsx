@@ -7,7 +7,7 @@ export const Music = () => {
         <>
             <Nav active="music"/>
             <h1 className='pb-12 font-semibold text-6xl'>Music</h1>
-            <H2>Priviously released music (embedded iframes from odesli.com) Also on top Spotify & Apple music embed. Chronological order bottom to top</H2>
+            <h2>Priviously released music (embedded iframes from odesli.com) Also on top Spotify & Apple music embed. Chronological order bottom to top</h2>
             <div className='relative bottom-0'>
             <Footer />
             </div>
