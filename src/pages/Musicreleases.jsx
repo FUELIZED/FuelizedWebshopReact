@@ -5,7 +5,7 @@ import { BackToTop } from './components/BackToTop.jsx';
 export const Musicreleases = () => {
     return (
         <>
-            <Nav active="Music Releases"/>
+            <Nav active="musicreleases"/>
             <h1 className='pb-12 font-semibold text-6xl'>Music Releases</h1>
             <div className='relative bottom-0'>
             <Footer />
