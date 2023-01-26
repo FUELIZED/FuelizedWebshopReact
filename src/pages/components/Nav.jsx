@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import {IoMdPhotos, IoIosMusicalNotes, IoMdBasket, IoMdDownload, IoMdContact, IoMdMusicalNote, IoMdShirt} from "react-icons/io"
+import {IoMdPhotos, IoIosMusicalNotes, IoMdBasket, IoMdDownload, IoMdContact, IoMdMusicalNote, IoMdShirt, IoMdInformationCircleOutline, IoMdInformation, IoMdCloudDownload, IoMdBriefcase} from "react-icons/io"
 import {FaRecordVinyl} from "react-icons/fa"
 import {GiHoodie, GiShoppingBag} from "react-icons/gi"
 
@@ -16,6 +16,10 @@ export const Nav = (arg) => {
     const hoodiesIcon = <GiHoodie className={`${arg.active === "hoodies" ? "fill-blue-400": "fill-gray-400"}`}/>
     const tshirtsIcon = <IoMdShirt className={`${arg.active === "tshirts" ? "fill-blue-400": "fill-gray-400"}`}/>
     const goodiebagsIcon = <GiShoppingBag className={`${arg.active === "goodiebags" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const myaccountIcon = <IoMdInformationCircleOutline className={`${arg.active === "myaccount" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const accountdetailsIcon = <IoMdInformation className={`${arg.active === "accountdetails" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const downloadsIcon = <IoMdCloudDownload className={`${arg.active === "downloads" ? "fill-blue-400": "fill-gray-400"}`}/>
+    const myordersIcon = <IoMdBriefcase className={`${arg.active === "myorders" ? "fill-blue-400": "fill-gray-400"}`}/>
 
     return (
         <nav id="navbartop" className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
@@ -82,22 +86,22 @@ export const Nav = (arg) => {
                     </li>
                     <li>
                         <Link to="/myaccount" className={`${navStyle} ${arg.active === "myaccount" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}My account
+                            {myaccountIcon}My account
                         </Link>
                     </li>
                     <li>
                         <Link to="/accountdetails" className={`${navStyle} ${arg.active === "accountdetails" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}Account details
+                            {accountdetailsIcon}Account details
                         </Link>
                     </li>
                     <li>
                         <Link to="/downloads" className={`${navStyle} ${arg.active === "downloads" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}Downloads
+                            {downloadsIcon}Downloads
                         </Link>
                     </li>
                     <li>
                         <Link to="/myorders" className={`${navStyle} ${arg.active === "myorders" ? "text-blue-400": "text-gray-400"}`}>
-                            {shopIcon}My orders
+                            {myordersIcon}My orders
                         </Link>
                     </li>
                 </ul>
