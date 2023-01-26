@@ -1,5 +1,6 @@
 import { Nav } from './components/Nav.jsx';
 import { Footer } from './components/Footer.jsx';
+import { BackToTop } from './components/BackToTop.jsx';
 
 const images = [
     "src/assets/gallery/g1.jpeg",
@@ -68,9 +69,9 @@ const Grid = (args) => {
       </div>
     </div>
   </div>
-  <div className='relative bottom-0'>
-<Footer />
-</div>
+      <div className='relative bottom-0'>
+                        <Footer />
+      </div>
 </section>
     )   
 }

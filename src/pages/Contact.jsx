@@ -1,5 +1,6 @@
 import { Nav } from './components/Nav.jsx';
 import { Footer } from './components/Footer.jsx';
+import { BackToTop } from './components/BackToTop.jsx';
 
 export const Contact = () => {
     return (
@@ -9,6 +10,8 @@ export const Contact = () => {
             <div className='relative bottom-0'>
                         <Footer />
             </div>
+            <BackToTop />  
         </>
+        
     )
 };

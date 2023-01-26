@@ -1,6 +1,7 @@
 import { Nav } from './components/Nav.jsx';
 import { FreeTrack} from './components/FreeTrack.jsx';
 import { Footer } from './components/Footer.jsx';
+import { BackToTop } from './components/BackToTop.jsx';
 
 export const Freedownloads = () => {
     return (
@@ -11,6 +12,7 @@ export const Freedownloads = () => {
             <div className='relative bottom-0'>
                         <Footer />
             </div>
+            <BackToTop />
         </>
     )
 };
