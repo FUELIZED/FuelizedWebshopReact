@@ -1,4 +1,5 @@
 import { Nav } from './components/Nav.jsx';
+import { Footer } from './components/Footer.jsx';
 
 const images = [
     "src/assets/gallery/g1.jpeg",
@@ -16,7 +17,6 @@ const images = [
     "src/assets/gallery/g14.jpg",
     "src/assets/gallery/g15.jpg"
 ];
-
 
 export const Gallery = () => {
     return (
@@ -68,6 +68,9 @@ const Grid = (args) => {
       </div>
     </div>
   </div>
+  <div className='relative bottom-0'>
+<Footer />
+</div>
 </section>
-    )
+    )   
 }
