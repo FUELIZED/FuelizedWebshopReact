@@ -7,6 +7,7 @@ export const Hoodies = () => {
         <>
             <Nav active="hoodies"/>
             <h1 className='pb-12 font-semibold text-6xl'>Hoodies</h1>
+            <h2>This shows the hoodies products on this page.</h2>
             <div className='relative bottom-0'>
             <Footer />
             </div>
