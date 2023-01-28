@@ -11,7 +11,7 @@ import { Hoodies } from './pages/Hoodies.jsx'
 import { Tshirts } from './pages/Tshirts.jsx'
 import { Musicreleases } from './pages/Musicreleases.jsx'
 import { Goodiebags } from './pages/Goodiebags.jsx'
-import { Myaccount } from './pages/Myaccount.jsx'
+import { Myaccount } from './pages/Account.jsx'
 import { Accountdetails } from './pages/Accountdetails.jsx'
 import { Downloads } from './pages/Downloads.jsx'
 import { Myorders } from './pages/Myorders.jsx'
@@ -34,9 +34,9 @@ function App() {
       <Route path="/freedownloads" element={<Freedownloads/>} />
       <Route path="/hoodies" element={<Hoodies/>} />
       <Route path="/tshirts" element={<Tshirts/>} />
-      <Route path="/musicreleases" element={<Musicreleases/>} />
+      {/* <Route path="/releases" element={<Musicreleases/>} /> */}
       <Route path="/goodiebags" element={<Goodiebags/>} />
-      <Route path="/myaccount" element={<Myaccount/>} />
+      <Route path="/account" element={<Myaccount/>} />
       <Route path="/accountdetails" element={<Accountdetails/>} />
       <Route path="/downloads" element={<Downloads/>} />
       <Route path="/myorders" element={<Myorders/>} />
