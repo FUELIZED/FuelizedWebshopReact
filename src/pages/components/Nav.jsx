@@ -92,11 +92,11 @@ export const Nav = (arg) => {
                         <Link to="/music" className={`${navStyle} ${arg.active === "music" ? "text-blue-400": "text-gray-400"}`}>
                             <div className="flex place-items-center gap-1">
                                 <p className="place-self-start pt-1">{musicIcon}</p>
-                                <Dropdown active={arg.active} title="Music" el={[
+                                <Dropdown active={arg.active} title="Music" el ={[
                                     {link:"releases",title:"Releases"},
                                     {link:"freedownloads",title:"Free Downloads"},
                                     {link:"labels",title:"Labels"},
-                                    // /downloads ook hier?             <<<<<<<------------------------------------------
+                                    // /Downloads niet hier            <<<<<<<------------------------------------------
                                     ]} />
                             </div>
                         </Link>
@@ -127,6 +127,7 @@ export const Nav = (arg) => {
                                     {link:"account",title:"My Account"},
                                     {link:"accountdetails",title:"Account details"},
                                     {link:"myorders",title:"My orders"},
+                                    // /Downloads moet hier komen! Aangezien je een track koopt, komt de download in je account.          <<<<<<<------------------------------------------
                                     ]}/>
                             </div>
                         </Link>
