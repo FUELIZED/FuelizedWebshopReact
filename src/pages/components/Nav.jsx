@@ -22,11 +22,11 @@ function Dropdown(arg) { // arg.active = title arg.el = array of objects with ti
         <>
         <div class="mobile:hidden" ref={dropdownRef}>
             <button
-              class={`text-dark-grey-100 ${arg.active === arg.title.toLowerCase() ? "text-blue-400": "text-gray-400"}`}
-              onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
-              >{arg.title}</button>
+            class={`text-dark-grey-100 ${arg.active === arg.title.toLowerCase() ? "text-blue-400": "text-gray-400"}`}
+            onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
+            >{arg.title}</button>
             {isMenuDropDownOpen && <Menu el={arg.el}/>}
-          </div>
+        </div>
         </>
     )
 }
@@ -59,7 +59,6 @@ export const Nav = (arg) => {
     const eventsIcon = <GiCalendar className={`${arg.active === "events" ? "fill-blue-400": "fill-gray-400"}`}/>
     const accountIcon = <RiAccountCircleFill className={`${arg.active === "account" ? "fill-blue-400": "fill-gray-400"}`}/>
 
-
     return (
         <nav id="navbartop" className="bg-zinc-900 border-zinc-200 px-2 sm:px-4 py-2.5">
             <div className="container flex flex-wrap items-center justify-between mx-auto">
@@ -73,7 +72,7 @@ export const Nav = (arg) => {
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul className="flex flex-col p-4 mt-4 border border-zinc-700 rounded-lg bg-zinc-800 md:flex-row md:space-x-8 md:mt-0 
                     md:text-sm md:font-medium md:border-0 md:bg-zinc-900 dark:border-zinc-700">
-                     <li>
+                    <li>
                         <Link to="/contact" className={`${navStyle} ${arg.active === "contact" ? "text-blue-400": "text-gray-400"}`}>
                             {contactIcon}Contact
                         </Link>
@@ -96,7 +95,6 @@ export const Nav = (arg) => {
                                     {link:"releases",title:"Releases"},
                                     {link:"freedownloads",title:"Free Downloads"},
                                     {link:"labels",title:"Labels"},
-                                    // /Downloads niet hier            <<<<<<<------------------------------------------
                                     ]} />
                             </div>
                         </Link>
@@ -113,21 +111,15 @@ export const Nav = (arg) => {
                             </div>
                         </Link>
                     </li>
-                    <li> 
-                        <Link to="/downloads" className={`${navStyle} ${arg.active === "downloads" ? "text-blue-400": "text-gray-400"}`}>
-                            {downloadsIcon}Downloads
-                        </Link>
-                    </li>
-                
                     <li>
                         <Link to="/account" className={`${navStyle} ${arg.active === "account" ? "text-blue-400": "text-gray-400"}`}>
                             <div className="flex place-items-center gap-1">
                                 <p className="place-self-start pt-1">{accountIcon}</p>
                                 <Dropdown active={arg.active} title="Account" el={[
-                                    {link:"account",title:"My Account"},
                                     {link:"accountdetails",title:"Account details"},
+                                    {link:"downloads",title:"Downloads"},
+                                    {link:"account",title:"My Account"},
                                     {link:"myorders",title:"My orders"},
-                                    // /Downloads moet hier komen! Aangezien je een track koopt, komt de download in je account.          <<<<<<<------------------------------------------
                                     ]}/>
                             </div>
                         </Link>
