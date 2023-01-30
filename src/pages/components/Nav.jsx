@@ -73,6 +73,21 @@ export const Nav = (arg) => {
                 <div className="hidden w-full md:block md:w-auto" id="navbar-default">
                 <ul className="flex flex-col p-4 mt-4 border border-zinc-700 rounded-lg bg-zinc-800 md:flex-row md:space-x-8 md:mt-0 
                     md:text-sm md:font-medium md:border-0 md:bg-zinc-900 dark:border-zinc-700">
+                     <li>
+                        <Link to="/contact" className={`${navStyle} ${arg.active === "contact" ? "text-blue-400": "text-gray-400"}`}>
+                            {contactIcon}Contact
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/events" className={`${navStyle} ${arg.active === "events" ? "text-blue-400": "text-gray-400"}`}>
+                            {eventsIcon}Events
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/gallery" className={`${navStyle} ${arg.active === "gallery" ? "text-blue-400": "text-gray-400"}`}>
+                            {galleryIcon}Gallery
+                        </Link>
+                    </li>
                     <li>
                         <Link to="/music" className={`${navStyle} ${arg.active === "music" ? "text-blue-400": "text-gray-400"}`}>
                             <div className="flex place-items-center gap-1">
@@ -84,16 +99,6 @@ export const Nav = (arg) => {
                                     // /downloads ook hier?             <<<<<<<------------------------------------------
                                     ]} />
                             </div>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/events" className={`${navStyle} ${arg.active === "events" ? "text-blue-400": "text-gray-400"}`}>
-                            {eventsIcon}Events
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/gallery" className={`${navStyle} ${arg.active === "gallery" ? "text-blue-400": "text-gray-400"}`}>
-                            {galleryIcon}Gallery
                         </Link>
                     </li>
                     <li>
@@ -113,11 +118,7 @@ export const Nav = (arg) => {
                             {downloadsIcon}Downloads
                         </Link>
                     </li>
-                    <li>
-                        <Link to="/contact" className={`${navStyle} ${arg.active === "contact" ? "text-blue-400": "text-gray-400"}`}>
-                            {contactIcon}Contact
-                        </Link>
-                    </li>
+                
                     <li>
                         <Link to="/account" className={`${navStyle} ${arg.active === "account" ? "text-blue-400": "text-gray-400"}`}>
                             <div className="flex place-items-center gap-1">
