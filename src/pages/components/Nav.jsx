@@ -40,7 +40,7 @@ function Menu(arg) {
                     console.log(item)
                     return (
                         <li>
-                            <Link to={item.link} className={`dropdown-item ${navStyle} text-gray-400 m-2`}>{item.title}</Link>
+                            <Link to={`/${item.link}`} relative="path" className={`dropdown-item ${navStyle} text-gray-400 m-2`}>{item.title}</Link>
                         </li>
                     )
                 })}
@@ -92,9 +92,9 @@ export const Nav = (arg) => {
                             <div className="flex place-items-center gap-1">
                                 <p className="place-self-start pt-1">{musicIcon}</p>
                                 <Dropdown active={arg.active} title="Music" el ={[
-                                    {link:"releases",title:"Releases"},
-                                    {link:"freedownloads",title:"Free Downloads"},
-                                    {link:"labels",title:"Labels"},
+                                    {link:"music/releases",title:"Releases"},
+                                    {link:"music/freedownloads",title:"Free Downloads"},
+                                    {link:"music/labels",title:"Labels"},
                                     ]} />
                             </div>
                         </Link>
@@ -104,9 +104,9 @@ export const Nav = (arg) => {
                             <div className="flex place-items-center gap-1">
                                 <p className="place-self-start pt-1">{shopIcon}</p>
                                 <Dropdown active={arg.active} title="Shop" el={[
-                                    {link:"hoodies",title:"Hoodies"},
-                                    {link:"tshirts",title:"T-Shirts"},
-                                    {link:"goodiebags",title:"Goodiebags"},
+                                    {link:"shop/hoodies",title:"Hoodies"},
+                                    {link:"shop/tshirts",title:"T-Shirts"},
+                                    {link:"shop/goodiebags",title:"Goodiebags"},
                                     ]}/>
                             </div>
                         </Link>
@@ -116,59 +116,14 @@ export const Nav = (arg) => {
                             <div className="flex place-items-center gap-1">
                                 <p className="place-self-start pt-1">{accountIcon}</p>
                                 <Dropdown active={arg.active} title="Account" el={[
-                                    {link:"accountdetails",title:"Account details"},
-                                    {link:"downloads",title:"Downloads"},
+                                    {link:"account/accountdetails",title:"Account details"},
+                                    {link:"account/downloads",title:"Downloads"},
                                     {link:"account",title:"My Account"},
-                                    {link:"myorders",title:"My orders"},
+                                    {link:"account/myorders",title:"My orders"},
                                     ]}/>
                             </div>
                         </Link>
                     </li>
-                    {/* <li>
-                        <Link to="/myaccount" className={`${navStyle} ${arg.active === "myaccount" ? "text-blue-400": "text-gray-400"}`}>
-                            {myaccountIcon}My account
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/accountdetails" className={`${navStyle} ${arg.active === "accountdetails" ? "text-blue-400": "text-gray-400"}`}>
-                            {accountdetailsIcon}Account details
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/myorders" className={`${navStyle} ${arg.active === "myorders" ? "text-blue-400": "text-gray-400"}`}>
-                            {myordersIcon}My orders
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/freedownloads" className={`${navStyle} ${arg.active === "freedownloads" ? "text-blue-400": "text-gray-400"}`}>
-                        {freedownloadsIcon}Free Downloads
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/labels" className={`${navStyle} ${arg.active === "labels" ? "text-blue-400": "text-gray-400"}`}>
-                        {labelsIcon}Labels
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/musicreleases" className={`${navStyle} ${arg.active === "musicreleases" ? "text-blue-400": "text-gray-400"}`}>
-                            {musicreleasesIcon}Music Releases
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/hoodies" className={`${navStyle} ${arg.active === "hoodies" ? "text-blue-400": "text-gray-400"}`}>
-                            {hoodiesIcon}Hoodies
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/tshirts" className={`${navStyle} ${arg.active === "tshirts" ? "text-blue-400": "text-gray-400"}`}>
-                            {tshirtsIcon}T-Shirts
-                        </Link>
-                    </li> */}
-                    {/* <li>
-                        <Link to="/goodiebags" className={`${navStyle} ${arg.active === "goodiebags" ? "text-blue-400": "text-gray-400"}`}>
-                            {goodiebagsIcon}Goodiebags
-                        </Link>
-                    </li> */}
                 </ul>
                 </div>
             </div>

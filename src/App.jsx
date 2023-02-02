@@ -26,23 +26,30 @@ function App() {
   return (
     <Routes>
       <Route index element={<Home />} />
+
       <Route path="/gallery" element={<Gallery />} />
+
       <Route path="/contact" element={<Contact />} />
+
       <Route path="/music" element={<Music />} />
+      <Route path="/music/releases" element={<Musicreleases/>} />
+      <Route path="/music/freedownloads" element={<Freedownloads/>} />
+      <Route path="/music/labels" element={<Labels/>} />
+
       <Route path="/shop" element={<Shop />} />
-      <Route path="/labels" element={<Labels/>} />
-      <Route path="/freedownloads" element={<Freedownloads/>} />
-      <Route path="/hoodies" element={<Hoodies/>} />
-      <Route path="/tshirts" element={<Tshirts/>} />
-      {/* <Route path="/releases" element={<Musicreleases/>} /> */}
-      <Route path="/goodiebags" element={<Goodiebags/>} />
+      <Route path="/shop/hoodies" element={<Hoodies/>} />
+      <Route path="/shop/tshirts" element={<Tshirts/>} />
+      <Route path="/shop/goodiebags" element={<Goodiebags/>} />
+
       <Route path="/account" element={<Myaccount/>} />
-      <Route path="/accountdetails" element={<Accountdetails/>} />
-      <Route path="/downloads" element={<Downloads/>} />
-      <Route path="/myorders" element={<Myorders/>} />
+      <Route path="/account/accountdetails" element={<Accountdetails/>} />
+      <Route path="/account/downloads" element={<Downloads/>} />
+      <Route path="/account/myorders" element={<Myorders/>} />
+
       <Route path="/termsandconditions" element={<Termsandconditions/>} />
       <Route path="/privacypolicy" element={<Privacypolicy/>} />
       <Route path="/events" element={<Events/>} />
+      
       <Route path="*" element={<NotFound />} />
     </Routes>
   )
