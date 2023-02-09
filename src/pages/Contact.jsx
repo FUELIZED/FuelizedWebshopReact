@@ -56,6 +56,10 @@ export const Contact = () => {
     Message:
     <br></br><input type="message" name="message" />
 </label>
+
+<br />
+
+<input type="submit" value="Send message now button..." />
 </form>
 </form>
 
