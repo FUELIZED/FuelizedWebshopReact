@@ -6,7 +6,7 @@ import { BackToTop } from './components/BackToTop.jsx';
 export const Freedownloads = () => {
     return (
         <>
-            <Nav active="freedownloads"/>
+            <Nav active="music"/>
             <h1 className='pb-12 font-semibold text-6xl'>Free downloads</h1>
             <h2>All free downloads with image, audio pre-listen & download buttons included.</h2>
             <h2>Needs to be a product that is downloadable for free via the cart & checkout page.</h2>

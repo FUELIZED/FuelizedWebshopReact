@@ -5,7 +5,7 @@ import { BackToTop } from './components/BackToTop.jsx';
 export const Accountdetails = () => {
     return (
         <>
-            <Nav active="accountdetails"/>
+            <Nav active="account"/>
             <h1 className='pb-12 font-semibold text-6xl'>Account details</h1>
             <div className='relative bottom-0'>
             <Footer />
