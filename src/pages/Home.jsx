@@ -47,7 +47,7 @@ export const Home = () => {
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
                         <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="\src\assets\Artwork cover homepage.png" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
                         <div className='grid place-items-center'>
-                            <p className='m-4 font-semibold text-xl'>LATEST RELEASE 30.05.2022</p>
+                            <p className='m-4 font-semibold text-xl'>NEXT RELEASE FRIDAY 10/03/2023</p>
                             <p>{latest}</p>
                             <p className='text-center w-4/5'>{latestInfo}</p>
                             <div className='text-center'>
