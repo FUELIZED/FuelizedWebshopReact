@@ -20,9 +20,9 @@ function Dropdown(arg) { // arg.active = title arg.el = array of objects with ti
     
     return (
         <>
-        <div class="mobile:hidden" ref={dropdownRef}>
+        <div className="mobile:hidden" ref={dropdownRef}>
             <button
-            class={`text-dark-grey-100 ${arg.active === arg.title.toLowerCase() ? "text-blue-400": "text-gray-400"}`}
+            className={`text-dark-grey-100 ${arg.active === arg.title.toLowerCase() ? "text-blue-400": "text-gray-400"}`}
             onMouseOver={() => setMenuDropDownOpen(true)} //use mouseover event to show dropdown
             >{arg.title}</button>
             {isMenuDropDownOpen && <Menu el={arg.el}/>}
