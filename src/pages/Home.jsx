@@ -3,16 +3,16 @@ import { Footer } from './components/Footer.jsx';
 import { BackToTop } from './components/BackToTop.jsx';
 
 const latestDate = '08-01-2023';
-const latest = "Fuelized & A to C - Stay";
+const latest = "Fuelized & D-Revenger - Toxic";
 const latestLinks = {
     spotify: 'https://open.spotify.com/track/3GmqBJnp5Pj7QGX6ZKlQTJ?si=9114459cf7cd4e71',
     apple: 'https://music.apple.com/us/album/stay/1623265206?i=1623265212',
     soundcloud: 'https://soundcloud.com/fuelizeddnb/stay'
 }
-const latestInfo = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl" + 
-        " aliquet nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, eget" +
-        " aliquam nunc nisl eget nisl. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, eget aliquam nunc nisl" +
-        " eget nisl. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquet nisl, eget aliquam nunc nisl eget nisl.";
+const latestInfo = "Out Friday the 10th of March" + 
+        "Exclusive on Juno Download & Spotify" + 
+        "Full release on all platforms 17.03.2023" +
+        "Pre-Save/Order link available 01.03.2023";
 
 export const Home = () => {
 
@@ -45,7 +45,7 @@ export const Home = () => {
 
                 <div className='h-screen bg-zinc-900 snap-start'>
                     <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="\src\assets\Artwork cover homepage.png" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="src\assets\FUELIZED_TOXIC_FINAL.jpeg" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
                         <div className='grid place-items-center'>
                             <p className='m-4 font-semibold text-xl'>NEXT RELEASE FRIDAY 10/03/2023</p>
                             <p>{latest}</p>
