@@ -11,7 +11,7 @@ const latestLinks = {
 }
 const latestInfo = "Out Friday the 10th of March" + 
         "Exclusive on Juno Download & Spotify" + 
-        "Full release on all platforms 17.03.2023" +
+        "Full release on all platforms 17.03.2023" + 
         "Pre-Save/Order link available 01.03.2023";
 
 export const Home = () => {
@@ -54,7 +54,7 @@ export const Home = () => {
                                 <a href='https://open.spotify.com/artist/2xcgEqf4X5xcerwDFEcefI' target="_blank" className={`${roundedBtn} bg-green-600 hover:bg-green-500`}>LISTEN ON SPOTIFY</a>
                                 <a href='https://music.apple.com/us/artist/fuelized/1388443720' target="_blank" className={`${roundedBtn} bg-rose-500 hover:bg-rose-400`}>LISTEN ON APPLE MUSIC</a>
                             </div>
-                            <a href='https://soundcloud.com/fuelizeddnb' target="_blank" className={`${roundedBtn} bg-orange-600 hover:bg-orange-500`}>LISTEN ON SOUNDCLOUD</a>
+                            <a href='https://soundcloud.com/fuelizeddnb/fuelized-d-revenger-toxic-clip-out-10032023' target="_blank" className={`${roundedBtn} bg-orange-600 hover:bg-orange-500`}>LISTEN ON SOUNDCLOUD</a>
                         </div>
                     </div>
                 </div>
