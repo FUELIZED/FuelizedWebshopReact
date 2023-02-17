@@ -20,8 +20,6 @@ import { Privacypolicy } from './pages/Privacypolicy.jsx'
 import { Events } from './pages/Events.jsx'
 import { NotFound } from './pages/NotFound.jsx'
 
-document.title = "Fuelized";
-
 function App() {
   return (
     <Routes>

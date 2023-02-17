@@ -18,7 +18,7 @@ export const Contact = () => {
     return (
         <>
             <Nav active="contact" />
-            <h1 className='pb-4 font-semibold text-4xl'>Contact</h1>
+            <h1 className='pb-1 pt-3 font-semibold text-xl text-center'>Get in touch!</h1>
                 <form className='[&>*]:m-2 grid place-items-center mb-20' onSubmit={handleSubmit(onSubmit)}>
                     <table className='[&>*>*]:m-2 m-0 rounded-xl bg-zinc-900'>
                         <tbody>
