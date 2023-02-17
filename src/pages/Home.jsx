@@ -16,7 +16,7 @@ const latestInfo = "Out Friday the 10th of March" +
 
 export const Home = () => {
 
-    const roundedBtn = 'inline-block rounded-full text-zinc-100 hover:text-zinc-900 w-64 py-4 text-center font-bold m-4 transition duration-200 ease-in-out';
+    const roundedBtn = 'inline-block rounded-full text-zinc-100 hover:text-zinc-900 sm:w-64 sm:py-4 text-center sm:font-bold sm:m-4 sm:text-lg text-xs p-2 m-1 font-semibold transition duration-200 ease-in-out';
     
     return (
         <>
@@ -24,7 +24,7 @@ export const Home = () => {
             <div id='overflow' className='h-screen overflow-scroll mandatory-snap-y'>
                 <div className='h-screen bg-zinc-800 snap-start grey-bg-image relative z-50'>
                     <Nav active="home"/>
-                    <div className='grid place-items-center grid-cols-2 grid-flow-row h-4/5'>
+                    <div className='grid place-items-center sm:grid-cols-2 grid-flow-row h-4/5'>
                         <div className='grid place-items-center'>
                             <p className='m-4 font-semibold text-xl'>Listen to my music below:</p>
                             <div className='text-center'>
@@ -34,7 +34,7 @@ export const Home = () => {
                             <a href='https://soundcloud.com/fuelizeddnb' target="_blank" className={`${roundedBtn} bg-orange-600 hover:bg-orange-500`}>SOUNDCLOUD</a>
                         </div>
                         {/* <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="src/assets/mixing.jpg" alt="image fuelized spinning" className='overflow-hidden rounded-3xl' /></div> */}
-                        <div className='bg-zinc-500 w-3/4 max-w-xl aspect-video rounded-3xl'>
+                        <div className='bg-zinc-500 w-3/4 max-w-xl aspect-video rounded-3xl hidden sm:inline'>
                             <video autoPlay loop muted className='overflow-hidden rounded-3xl'>
                                 <source src="src/assets/FUELIZED_SOLAR (1).mp4" type="video/mp4"/>
                                 no video support in this browser
@@ -44,12 +44,12 @@ export const Home = () => {
                 </div>
 
                 <div className='h-screen bg-zinc-900 snap-start'>
-                    <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-square rounded-3xl'><img src="src\assets\FUELIZED_TOXIC_FINAL.jpeg" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
+                    <div className='grid place-items-center sm:grid-cols-2 grid-flow-row h-full'>
+                        <div className='bg-zinc-500 w-3/5 sm:max-w-md aspect-square rounded-3xl'><img src="src\assets\FUELIZED_TOXIC_FINAL.jpeg" alt="image artwork release" className='overflow-hidden rounded-3xl' /></div>
                         <div className='grid place-items-center'>
-                            <p className='m-4 font-semibold text-xl'>NEXT RELEASE FRIDAY 10/03/2023</p>
-                            <p>{latest}</p>
-                            <p className='text-center w-4/5'>{latestInfo}</p>
+                            <p className='m-4 font-semibold sm:text-xl'>NEXT RELEASE FRIDAY 10/03/2023</p>
+                            <p className='sm:text-md text-sm'>{latest}</p>
+                            <p className='text-center w-4/5 sm:text-sm text-xs mb-4'>{latestInfo}</p>
                             <div className='text-center'>
                                 <a href='https://open.spotify.com/artist/2xcgEqf4X5xcerwDFEcefI' target="_blank" className={`${roundedBtn} bg-green-600 hover:bg-green-500`}>LISTEN ON SPOTIFY</a>
                                 <a href='https://music.apple.com/us/artist/fuelized/1388443720' target="_blank" className={`${roundedBtn} bg-rose-500 hover:bg-rose-400`}>LISTEN ON APPLE MUSIC</a>
@@ -60,51 +60,53 @@ export const Home = () => {
                 </div>
 
                 <div className='h-screen bg-zinc-800 snap-start'>
-                    <div className='grid place-items-center grid-cols-2 grid-flow-row h-full'>
-                        <div className='grid place-items-center'>
+                    <div className='grid sm:place-items-center sm:grid-cols-2 grid-flow-row h-full py-16'>
+                        <div className='grid place-items-center place-self-center'>
                             <h1 className='m-4 font-semibold text-xl'>Bookings</h1>
                             <a href='https://docs.google.com/forms/d/e/1FAIpQLSeRwXcI6kC9edDFMYPxkGXb4Kg6xturkMV6ui-RrBl0M12Pmw/viewform' target="_blank" className={`${roundedBtn} bg-blue-600 hover:bg-blue-500`}>Book me for your next event</a>
                         </div>
-                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'><img src="src/assets/IMG_1618.jpg" alt="image" className='overflow-hidden rounded-3xl' /></div>
+                        <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl place-self-center'><img src="src/assets/IMG_1618.jpg" alt="image" className='overflow-hidden rounded-3xl' /></div>
                     </div>
                 </div>
 
                 <div className='h-screen bg-zinc-900 snap-start lastElement'>
                 <div className='h-full flex flex-col overflow-hidden'>
-                    <div className='flex-grow grid'>
-                        <div className='grid place-items-end relative mx-auto'>
-                            <h1 className='m-4 font-semibold text-xl'>Logo's</h1>
-                        </div>
-                        <div className='h-max'>
-                            <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
-                            <div className='flex w-4/5 justify-center relative top-4 mx-auto gap-8'>
-                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl '>
-                                    <img src="src\assets\imgs_vids\BLACK ORANGE BORDER.png" alt="src\assets\imgs_vids\2021-07-05 13.12.36.png" className='overflow-hidden rounded-3xl' />
-                                </div>
-                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                    <img src="src\assets\imgs_vids\BLACK PURPLE.png" alt="src/assets/FUELIZED_SOLAR (1).mp4" className='overflow-hidden rounded-3xl' />
-                                </div>
-                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                    <img src="src\assets\imgs_vids\BLACK GREEN BRDR.png" alt="src/assets/" className='overflow-hidden rounded-3xl' />
+                    <div className='h-full flex flex-col py-16 sm:py-'>
+                        <div className='flex-grow grid'>
+                            <div className='grid place-items-end relative mx-auto'>
+                                <h1 className='m-4 font-semibold text-xl'>Logo's</h1>
+                            </div>
+                            <div className='h-max'>
+                                <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
+                                <div className='flex w-4/5 justify-center relative top-4 mx-auto gap-8'>
+                                    <div className='bg-zinc-500 sm:w-3/4 max-w-md aspect-video rounded-3xl '>
+                                        <img src="src\assets\imgs_vids\BLACK ORANGE BORDER.png" alt="src\assets\imgs_vids\2021-07-05 13.12.36.png" className='overflow-hidden rounded-3xl' />
+                                    </div>
+                                    <div className='bg-zinc-500 sm:w-3/4 max-w-md aspect-video rounded-3xl'>
+                                        <img src="src\assets\imgs_vids\BLACK PURPLE.png" alt="src/assets/FUELIZED_SOLAR (1).mp4" className='overflow-hidden rounded-3xl' />
+                                    </div>
+                                    <div className='bg-zinc-500 sm:w-3/4 max-w-md aspect-video rounded-3xl'>
+                                        <img src="src\assets\imgs_vids\BLACK GREEN BRDR.png" alt="src/assets/" className='overflow-hidden rounded-3xl' />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='flex-grow grid'>
-                        <div className='grid place-items-end relative mx-auto'>
-                            <h1 className='m-4 font-semibold text-xl'>Past events</h1>
-                        </div>
-                        <div className='h-max'>
-                            <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
-                            <div className='flex w-4/5 justify-center relative top-4 mx-auto gap-8'>
-                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl '>
-                                    <img src="src\assets\imgs_vids\20210218_071438_img_0609.JPG" alt="src\assets\imgs_vids\2021-07-05 13.12.36.png" className='overflow-hidden rounded-3xl' />
-                                </div>
-                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                    <img src="src\assets\imgs_vids\IMG_8167.jpg" alt="src/assets/FUELIZED_SOLAR (1).mp4" className='overflow-hidden rounded-3xl' />
-                                </div>
-                                <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
-                                    <img src="src\assets\imgs_vids\mixing.jpg" alt="src/assets/" className='overflow-hidden rounded-3xl' />
+                        <div className='flex-grow grid'>
+                            <div className='grid place-items-end relative mx-auto'>
+                                <h1 className='m-4 font-semibold text-xl'>Past events</h1>
+                            </div>
+                            <div className='h-max'>
+                                <div className="bg-zinc-500 w-4/5 max-w-7xl h-1 rounded mx-auto mb-4"></div>
+                                <div className='flex w-4/5 justify-center relative top-4 mx-auto gap-8'>
+                                    <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl '>
+                                        <img src="src\assets\imgs_vids\20210218_071438_img_0609.JPG" alt="src\assets\imgs_vids\2021-07-05 13.12.36.png" className='overflow-hidden rounded-3xl' />
+                                    </div>
+                                    <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
+                                        <img src="src\assets\imgs_vids\IMG_8167.jpg" alt="src/assets/FUELIZED_SOLAR (1).mp4" className='overflow-hidden rounded-3xl' />
+                                    </div>
+                                    <div className='bg-zinc-500 w-3/4 max-w-md aspect-video rounded-3xl'>
+                                        <img src="src\assets\imgs_vids\mixing.jpg" alt="src/assets/" className='overflow-hidden rounded-3xl' />
+                                    </div>
                                 </div>
                             </div>
                         </div>
